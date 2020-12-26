@@ -1,17 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  birthday: ''
+  birthday: "",
 };
 
 export const rootSlice = createSlice({
-  name: 'store',
+  name: "store",
   initialState,
   reducers: {
-    addBirthday: (state, action) => {
-      state.birthday = action.payload
-    }
-  }
+    addBirthday: (state, action) => {
+      state.birthday = action.payload;
+    },
+  },
 });
 
 export const { addBirthday } = rootSlice.actions;

@@ -1,6 +1,6 @@
-@import '~@pyxeldev/reset-css/reset.min.css';
+@import "~@pyxeldev/reset-css/reset.min.css";
 
-$green: #6DD400;
+$green: #6dd400;
 
 h1.title {
   font-size: 3rem;
@@ -43,7 +43,7 @@ h1.title {
   .input {
     label {
       display: block;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     input {

@@ -56,9 +56,9 @@ const Chart = () => {
   const dataBase = {
     labels: [],
     datasets: [
-      { data: [], label: 'Physical', fill: false, borderColor: '#f33535' },
-      { data: [], label: 'Emotional', fill: false, borderColor: '#3498db' },
-      { data: [], label: 'Intellectual', fill: false, borderColor: '#52d681' },
+      { data: [], label: "Physical", fill: false, borderColor: "#f33535" },
+      { data: [], label: "Emotional", fill: false, borderColor: "#3498db" },
+      { data: [], label: "Intellectual", fill: false, borderColor: "#52d681" },
     ],
   };
 
@@ -68,7 +68,7 @@ const Chart = () => {
         {
           ticks: {
             suggestedMin: -100,
-            suggestedMax: 100
+            suggestedMax: 100,
           },
         },
       ],
@@ -77,20 +77,20 @@ const Chart = () => {
     aspectRatio: 1.5,
     plugins: {
       annotation: {
-        drawTime: 'afterDatasetsDraw',
+        drawTime: "afterDatasetsDraw",
         annotations: [
           {
-            drawTime: 'afterDraw',
-            type: 'line',
+            drawTime: "afterDraw",
+            type: "line",
             display: true,
-            scaleID: 'x',
+            scaleID: "x",
             value: dateFormat(),
-            borderColor: 'black',
-            borderWidth: 2
-          }
-        ]
-      }
-    }
+            borderColor: "black",
+            borderWidth: 2,
+          },
+        ],
+      },
+    },
   };
 
   const generate = (days = 7) => {
@@ -112,7 +112,7 @@ const Chart = () => {
     }
 
     datesRange = datesRange.sort((a, b) => a - b);
-    datesRange.forEach(date => {
+    datesRange.forEach((date) => {
       const dateFormatted = dateFormat(date);
       datesChart.push(dateFormatted);
     });
@@ -127,15 +127,16 @@ const Chart = () => {
     let emotionalArr = [];
     let intellectualArr = [];
 
-    datesRange.forEach(date => {
+    datesRange.forEach((date) => {
       const d = new Date(date);
       const diff = d.getTime() - birthdayDate.getTime();
       const days = diff / (1000 * 60 * 60 * 24);
 
-      const physical = Math.round(Math.sin(2 * Math.PI * days / 23) * unit);
-      const emotional = Math.round(Math.sin(2 * Math.PI * days / 28) * unit);
-      const intellectual = Math.round(Math.sin(2 * Math.PI * days / 33) * unit);
-
+      const physical = Math.round(Math.sin((2 * Math.PI * days) / 23) * unit);
+      const emotional = Math.round(Math.sin((2 * Math.PI * days) / 28) * unit);
+      const intellectual = Math.round(
+        Math.sin((2 * Math.PI * days) / 33) * unit
+      );
 
       physicalArr.push(physical);
       emotionalArr.push(emotional);
@@ -152,13 +153,13 @@ const Chart = () => {
   return (
     <>
       <Line
-        ref={(reference) => chartReference = reference}
+        ref={(reference) => (chartReference = reference)}
         data={dataBase}
         options={optionsBase}
         redraw
       />
     </>
   );
-}
+};
 
 export default Chart;
