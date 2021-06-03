@@ -1,5 +1,3 @@
-import { dateFormat } from "./date";
-
 export const optionsBase = {
   scales: {
     yAxes: [
@@ -11,8 +9,7 @@ export const optionsBase = {
       },
     ],
   },
-  responsive: true,
-  maintainAspectRatio: true,
+  maintainAspectRatio: false,
   tooltips: {
     intersect: false,
     mode: "index",
@@ -24,23 +21,5 @@ export const optionsBase = {
     xPadding: 8,
     caretSize: 8,
     cornerRadius: 4,
-  },
-  plugins: {
-    annotation: {
-      annotations: {
-        line1: {
-          drawTime: "afterDatasetsDraw",
-          type: "line",
-          mode: "vertical",
-          display: true,
-          xScaleID: "x",
-          // value: "2021-05-28",
-          // value: "05/28/2021",
-          value: dateFormat(),
-          borderColor: "black",
-          borderWidth: 2,
-        },
-      },
-    },
-  },
+  }
 };

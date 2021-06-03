@@ -33,7 +33,7 @@ const Result: React.FC = () => {
   });
 
   return (
-    <section className="result">
+    <section className="chart-container">
       <Line
         ref={(reference) => (chartReference = reference)}
         data={dataBase}

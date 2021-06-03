@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-@import "~@pyxeldev/reset-css/reset.min.css";
-
-$green: #6dd400;
-
-h1.title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem auto;
-=======
 @import "variables";
 
 body {
@@ -30,46 +19,12 @@ h1.logo {
   font-size: 3rem;
   font-weight: bold;
   margin: 5rem auto;
->>>>>>> refactor(*): new version
 
   span {
     color: $green;
   }
 }
 
-<<<<<<< HEAD
-.infos {
-  background-color: #eee;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-
-  &-inner {
-    display: flex;
-    border: none;
-    text-align: center;
-    justify-content: space-around;
-    max-width: 640px;
-    width: 90%;
-    margin: 0 auto 2rem;
-  }
-
-  @media (max-width: 900px) {
-    fieldset {
-      flex-direction: column;
-
-      & div:not(:first-of-type) {
-        margin-top: 2rem;
-      }
-    }
-  }
-
-  .input {
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-=======
 // Form
 
 .form {
@@ -108,42 +63,10 @@ h1.logo {
           margin-bottom: 0.5rem;
         }
       }
->>>>>>> refactor(*): new version
     }
 
     input {
       appearance: none;
-<<<<<<< HEAD
-      border: thin solid darken(white, 30%);
-      padding: 1rem 2rem;
-      font-size: 2rem;
-      width: 100%;
-      max-width: 300px;
-      background-color: white;
-    }
-  }
-
-  button.submit {
-    appearance: none;
-    border: thin solid darken(white, 30%);
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    width: 100%;
-    max-width: 300px;
-    background-color: white;
-    margin: auto;
-    background-color: $green;
-    border: thin solid darken($green, 30%);
-    font-weight: bold;
-    color: darken($green, 30%);
-    cursor: pointer;
-  }
-}
-
-.chart-container {
-  margin: 2rem auto;
-  width: 100%;
-=======
       width: 100%;
       border-radius: 4px;
       font-size: 1rem;
@@ -187,9 +110,8 @@ h1.logo {
 
 // Result
 
-.result {
-  margin: 5rem auto;
-  width: 100%;
-  // height: 500px;
->>>>>>> refactor(*): new version
+.chart-container {
+  position: relative;
+  margin: 5rem 0;
+  height: 500px;
 }

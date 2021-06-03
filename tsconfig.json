@@ -14,10 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-<<<<<<< HEAD
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/chart.tss"],
-=======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
->>>>>>> refactor(*): new version
   "exclude": ["node_modules"]
 }
