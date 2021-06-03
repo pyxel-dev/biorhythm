@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "~@pyxeldev/reset-css/reset.min.css";
 
 $green: #6dd400;
@@ -7,12 +8,36 @@ h1.title {
   font-weight: bold;
   text-align: center;
   margin: 2rem auto;
+=======
+@import "variables";
+
+body {
+  font-size: 1rem;
+  background-color: $bg;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  max-width: 1120px;
+}
+
+h1.logo {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5rem auto;
+>>>>>>> refactor(*): new version
 
   span {
     color: $green;
   }
 }
 
+<<<<<<< HEAD
 .infos {
   background-color: #eee;
   padding: 2rem;
@@ -44,10 +69,51 @@ h1.title {
     label {
       display: block;
       margin-bottom: 0.5rem;
+=======
+// Form
+
+.form {
+  margin: auto;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+      }
+
+      .option {
+        width: 100%;
+
+        &:not(:first-of-type) {
+          margin-left: 1rem;
+        }
+
+        @media (max-width: 640px) {
+          &:not(:first-of-type) {
+            margin-left: 0;
+            margin-top: 1rem;
+          }
+        }
+
+        label {
+          margin-bottom: 0.5rem;
+        }
+      }
+>>>>>>> refactor(*): new version
     }
 
     input {
       appearance: none;
+<<<<<<< HEAD
       border: thin solid darken(white, 30%);
       padding: 1rem 2rem;
       font-size: 2rem;
@@ -77,4 +143,53 @@ h1.title {
 .chart-container {
   margin: 2rem auto;
   width: 100%;
+=======
+      width: 100%;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      padding: 0.5rem 0.75rem;
+      border: 2px solid darken($bg, 10%);
+      background-color: white;
+      outline: none;
+      height: 42px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        border-color: $blue;
+      }
+    }
+
+    button {
+      appearance: none;
+      margin-top: 2rem;
+      font-size: 2rem;
+      padding: 1rem;
+      border: 2px solid darken($green, 30%);
+      border-radius: 4px;
+      background-color: $green;
+      color: darken($green, 30%);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        background-color: lighten($green, 20%);
+        border-color: darken($green, 10%);
+        color: darken($green, 10%);
+      }
+    }
+  }
+}
+
+// Result
+
+.result {
+  margin: 5rem auto;
+  width: 100%;
+  // height: 500px;
+>>>>>>> refactor(*): new version
 }

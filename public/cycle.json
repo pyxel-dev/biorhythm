@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Physical",
+    "color": "#FA5A5A",
+    "cycle": 23,
+    "hidden": false
+  },
+  {
+    "label": "Emotional",
+    "color": "#006FFF",
+    "cycle": 28,
+    "hidden": false
+  },
+  {
+    "label": "Intellectual",
+    "color": "#63D778",
+    "cycle": 33,
+    "hidden": false
+  },
+  {
+    "label": "Spiritual",
+    "color": "#00ead3",
+    "cycle": 53,
+    "hidden": true
+  },
+  {
+    "label": "Intuitive",
+    "color": "#ff9a00",
+    "cycle": 38,
+    "hidden": true
+  },
+  {
+    "label": "Conscience",
+    "color": "#FFCB3A",
+    "cycle": 48,
+    "hidden": true
+  },
+  {
+    "label": "Aesthetic",
+    "color": "#ff449f",
+    "cycle": 43,
+    "hidden": true
+  }
+]

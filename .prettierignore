@@ -29,4 +29,8 @@ yarn-error.log*
 .env.production.local
 
 # vercel
+<<<<<<< HEAD
 .vercel
+=======
+.vercel
+>>>>>>> refactor(*): new version
