@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <script
           id="myownstats"
-          data-oms-id="b10rHytHm"
+          data-mos-id="biorhythm"
           src="https://myownstats.com/tag.js"
           async
           defer
